@@ -45,3 +45,4 @@ const burgerList = [{
 
 ]
 
+export{burgerList}

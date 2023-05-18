@@ -1,6 +1,3 @@
-
-// Voici la liste des burgers (le fichier se trouve dans le dossier data.js)
-
 const container = document.querySelector('#burger-container')
 
 // Indice :
@@ -65,46 +62,12 @@ const burgerList = [ {
 const burgercontainer = document.querySelector('#burger-container')
 burgerList.forEach(burgerList => {
 burgercontainer .innerHTML += `     
-<div class=" flex flex-col ">
-      <div class=" m-4 p-4 md:w-1/3">
-<div class="h-full  border-white border-opacity-60 rounded-lg overflow-hidden">
+<div class="bg-red-100 rounded shadow p-4 m-2 cursor-pointer transition transform hover:scale-105">
+<img class="w-40 h-40 object-cover" src="${burgerList.img}">
+<div class="text-indigo-500 text-xs font-medium">${burgerList.nom}</div>
+<div class="text-gray-900 text-lg font-medium">${burgerList.prix}</div>
+<div class="text-base">${burgerList.description}</div> 
+<h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"> Caractéristiques: ${burgerList.Caracteristiques} </div>`
 
-<div class="h-full border-2 border-white border-opacity-60 rounded-lg overflow-hidden">
-
-<h1 class="title-font text-lg text-center font-medium text-gray-900 mb-3 underline"   ">${burgerList.nom}:</div>
-     <img class="  rounded w-full object-cover  object-center shadow hover:shadow-lg mb-6 lg:h-full md:h-36 w-full " src="${burgerList.img}" alt="blog"> </div>
-     <p class="leading-relaxed flex flex-col mb-3"> ${burgerList.description}</div>
-     <div class="flex pt-5"> Prix :⠀<div class="font-bold"> ${burgerList.prix}€ </div></div>
-     <div class="flex pt-5">
-     <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"> Caractéristiques: ${burgerList.Caracteristiques} </div>
-        
-     </div>
-</div>
-
- `
+ 
 })
-
-
-
-
-
-
-// Etape 3 
-// Ajouter la description et le prix 
-
-
-// Etape 4 
-// Afficher l'image du burger
-
-// Etape 5
-// Ajouter des nouveaux burgers dans le fichier data.js
-
-// Etape 6 
-// Ajouter votre site sur github page et ajouter le lien dans le cours 
-
-// Etape 7 (Bonus)
-// Rendre vos site le plus attractif possible en changeant le style
-// Vous pouvez remplacer les burgers par d'autre élements (ex: des films, des livres, des jeux vidéos, des personnages, des animaux, etc...)
-
-// Etape 8 (Bonus)
-// Afficher la liste des ingrédients
