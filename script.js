@@ -61,7 +61,7 @@ const burgerList = [ {
 // Dans #burger-container afficher le nom des burgers
 const burgercontainer = document.querySelector('#burger-container')
 burgerList.forEach(burgerList => {
-burgercontainer .innerHTML +=`<div class="bg-yellow-50 rounded shadow p-4 m-2 cursor-pointer transition transform hover:scale-105">
+burgercontainer .innerHTML +=`<div class="bg-yellow-50 rounded border-2 shadow p-4 m-2 cursor-pointer transition transform hover:scale-105">
 <img class="w-40 h-40 object-cover" src="${burgerList.img}">
 <div class="text-indigo-500 text-xs font-medium">${burgerList.nom}</div>
 <div class="text-gray-900 text-lg font-medium">${burgerList.prix}</div>
